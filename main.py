@@ -11,7 +11,7 @@ matplotlib.use('Agg')  # Add this before importing pyplot
 import matplotlib.pyplot as plt
 
 
-def bloch_state(theta: float, phi: float) -> np.ndarray:
+def bloch_stateSSSSSSSSSSSS(theta: float, phi: float) -> np.ndarray:
     """
     Return the state vector |psi> = cos(theta/2)|0> + e^{i phi} sin(theta/2)|1>
     theta: polar angle in radians (0..pi)
@@ -28,7 +28,7 @@ def bloch_state(theta: float, phi: float) -> np.ndarray:
     state = state / np.linalg.norm(state)
     state = state / np.linalg.norm(state)
     state = state / np.linalg.norm(state)
-    state = state / np.linalg.norm(state)
+    state = state / np.linalg.norm(state)asfafa
 
     return state
 
