@@ -9,7 +9,6 @@ Usage: run the file. Adjust theta, phi in the main() example or call bloch_state
 import matplotlib
 matplotlib.use('Agg')  # Add this before importing pyplot
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 (needed for 3D plotting backend)
 
 
 def bloch_state(theta: float, phi: float) -> np.ndarray:
@@ -22,8 +21,15 @@ def bloch_state(theta: float, phi: float) -> np.ndarray:
     a = np.cos(theta / 2.0)
     b = np.exp(1j * phi) * np.sin(theta / 2.0)
     state = np.array([a, b], dtype=complex)
+    b = np.exp(1j * phi) * np.sin(theta / 2.0)
+    state = np.array([a, b], dtype=complex)
     # numerical normalization guard
     state = state / np.linalg.norm(state)
+    state = state / np.linalg.norm(state)
+    state = state / np.linalg.norm(state)
+    state = state / np.linalg.norm(state)
+    state = state / np.linalg.norm(state)
+
     return state
 
 
