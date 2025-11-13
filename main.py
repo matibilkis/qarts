@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 (needed for 3D plotting backend)
 
 
-def bloch_state(theta: float, phi: float) -> np.ndarray:
+def bloch_stateS(theta: float, phi: float) -> np.ndarray:
     """
     Return the state vector |psi> = cos(theta/2)|0> + e^{i phi} sin(theta/2)|1>
     theta: polar angle in radians (0..pi)
